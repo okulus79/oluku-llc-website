@@ -1,0 +1,10 @@
+
+{
+  "name": "Oluku LLC Global Logistics",
+  "short_name": "Oluku Logistics",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0b2344",
+  "theme_color": "#0b2344",
+  "description": "Oluku LLC logistics services, quotes and shipment tracking."
+}
