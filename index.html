@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b2344">
+  <meta name="description" content="Oluku LLC Global Logistics — freight forwarding, express courier, packaging, cold-chain logistics, warehousing and fulfillment.">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
+  <title>Oluku LLC | Global Logistics</title>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Oluku LLC home">
+      <span class="brand-mark">O</span>
+      <span><b>OLUKU</b><small>GLOBAL LOGISTICS</small></span>
+    </a>
+    <button class="menu" aria-label="Open menu" onclick="toggleMenu()">☰</button>
+    <nav id="nav">
+      <a href="#services">Services</a>
+      <a href="#quote">Get a Quote</a>
+      <a href="#track">Track</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <span class="eyebrow">MOVING POSSIBILITIES. DELIVERING EXCELLENCE.</span>
+        <h1>Global logistics<br><em>at your scale.</em></h1>
+        <p>Reliable freight forwarding, courier, packaging, warehousing and cold-chain solutions for businesses and individuals.</p>
+        <div class="actions">
+          <a class="btn gold" href="#quote">Request a Quote</a>
+          <a class="btn ghost" href="#track">Track a Shipment</a>
+        </div>
+        <div class="hero-points">
+          <span>✓ Express Courier</span><span>✓ Air & Ocean Freight</span><span>✓ Cold Chain</span><span>✓ Fulfillment</span>
+        </div>
+      </div>
+      <div class="hero-card">
+        <img class="brand-image" src="assets/oluku-brand-reference.jpg" alt="Oluku LLC Global Logistics brand reference">
+        <div class="qr-panel" aria-label="Quick access QR codes">
+          <div class="qr-box">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=http%3A%2F%2F192.168.68.60%3A8000%2F" alt="QR code for the local website preview">
+            <span>Local Website</span>
+          </div>
+          <div class="qr-box">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=exp%3A%2F%2F192.168.68.60%3A19000" alt="QR code for the Expo app">
+            <span>Expo App</span>
+          </div>
+        </div>
+        <a class="secure-site-link" href="https://www.olukullic.com" target="_blank" rel="noreferrer">Secure site: www.olukullic.com</a>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="section-head">
+        <span class="eyebrow">OUR SERVICES</span>
+        <h2>One logistics partner. Multiple solutions.</h2>
+      </div>
+      <div class="grid">
+        <article class="card"><div class="icon">🚚</div><h3>Ground Transport</h3><p>Flexible local and regional transportation for time-sensitive shipments.</p></article>
+        <article class="card"><div class="icon">🚢</div><h3>Ocean Freight</h3><p>FCL/LCL coordination and global ocean shipping support.</p></article>
+        <article class="card"><div class="icon">✈️</div><h3>Air Freight</h3><p>Expedited international freight for urgent and high-value shipments.</p></article>
+        <article class="card"><div class="icon">📦</div><h3>Warehousing & Distribution</h3><p>Storage, order handling and fulfillment built around your operation.</p></article>
+        <article class="card"><div class="icon">⏱️</div><h3>Express Courier</h3><p>Fast document and parcel delivery with shipment visibility.</p></article>
+        <article class="card"><div class="icon">🎁</div><h3>Packaging & Crating</h3><p>Protective packaging and crating for domestic and international movement.</p></article>
+        <article class="card"><div class="icon">❄️</div><h3>Cold Chain Logistics</h3><p>Temperature-sensitive shipping support for products requiring controlled handling.</p></article>
+        <article class="card"><div class="icon">🌎</div><h3>Global Freight Forwarding</h3><p>End-to-end coordination from origin to destination.</p></article>
+      </div>
+    </section>
+
+    <section id="quote" class="section dark-section">
+      <div class="two-col">
+        <div>
+          <span class="eyebrow">REQUEST A QUOTE</span>
+          <h2>Tell us what you need moved.</h2>
+          <p>Submit shipment details and Oluku LLC can follow up with routing and pricing options.</p>
+          <div class="mini-stats"><div><b>24/7</b><span>Shipment support</span></div><div><b>Global</b><span>Freight coordination</span></div></div>
+        </div>
+        <form id="quoteForm" class="form">
+          <input required name="name" placeholder="Full name">
+          <input required type="email" name="email" placeholder="Email address">
+          <input name="phone" placeholder="Phone number">
+          <div class="form-row"><input required name="origin" placeholder="Origin"><input required name="destination" placeholder="Destination"></div>
+          <div class="form-row"><select name="service"><option>Ground Transport</option><option>Air Freight</option><option>Ocean Freight</option><option>Express Courier</option><option>Cold Chain</option><option>Warehousing & Fulfillment</option></select><input name="weight" placeholder="Approx. weight"></div>
+          <textarea name="details" rows="4" placeholder="Shipment details"></textarea>
+          <button class="btn gold" type="submit">Submit Quote Request</button>
+          <p id="quoteStatus" class="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="track" class="section track-section">
+      <div class="section-head">
+        <span class="eyebrow">SHIPMENT VISIBILITY</span>
+        <h2>Track your shipment</h2>
+        <p>Enter a tracking number to view the demo tracking workflow. Connect this form to your carrier/TMS API for live tracking.</p>
+      </div>
+      <form id="trackForm" class="track-form">
+        <input id="trackingNumber" placeholder="Example: OLU-2026-00125" required>
+        <button class="btn navy" type="submit">Track Shipment</button>
+      </form>
+      <div id="trackingResult" class="tracking-result hidden"></div>
+    </section>
+
+    <section id="about" class="section about">
+      <div>
+        <span class="eyebrow">ABOUT OLUKU LLC</span>
+        <h2>Moving possibilities on a global scale.</h2>
+        <p>Oluku LLC is positioned as a logistics partner for freight forwarding, courier delivery, packaging, cold-chain logistics, warehousing and fulfillment.</p>
+        <p class="coverage">Baltimore • Virginia • North Carolina • Washington, D.C. • Philadelphia • Delaware</p>
+      </div>
+      <div class="brand-panel">
+        <div class="brand-mark large">O</div>
+        <h3>OLUKU LLC</h3>
+        <p>GLOBAL LOGISTICS</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="contact-card">
+        <span class="eyebrow">CONTACT</span>
+        <h2>Let's move your next shipment.</h2>
+        <p><strong>Phone:</strong> (240) 978-3987</p>
+        <p><strong>Email:</strong> Lukeman.ibrahim@live.com</p>
+        <p><strong>Website:</strong> www.olukullic.com</p>
+        <div class="actions"><a class="btn gold" href="tel:+12409783987">Call Oluku</a><a class="btn ghost-dark" href="mailto:Lukeman.ibrahim@live.com">Email Us</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>© 2026 Oluku LLC Global Logistics</span><span>Moving possibilities. Delivering excellence.</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
