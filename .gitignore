@@ -1,0 +1,28 @@
+# Node
+node_modules/
+npm-debug.log
+package-lock.json
+.env
+
+# Expo
+.expo/
+.expo-shared/
+.expo-local/
+
+# macOS
+.DS_Store
+
+# Logs
+logs/
+*.log
+
+# Dist/build
+dist/
+build/
+
+# OS files
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/

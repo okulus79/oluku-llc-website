@@ -1,0 +1,13 @@
+{
+  "expo": {
+    "name": "Oluku Logistics App",
+    "slug": "oluku-logistics-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "platforms": ["ios", "android", "web"],
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}
