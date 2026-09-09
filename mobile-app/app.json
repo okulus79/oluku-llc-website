@@ -1,13 +1,37 @@
 {
   "expo": {
     "name": "Oluku Logistics App",
-    "slug": "oluku-logistics-app",
+    "slug": "olukullc",
     "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "light",
-    "platforms": ["ios", "android", "web"],
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "scheme": "oluku",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0b233a"
+    },
+    "ios": {
+      "bundleIdentifier": "com.oluku.logistics",
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.oluku.logistics"
+    },
     "web": {
       "bundler": "metro"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "5ea022bd-e227-4da9-8d3d-523694f0662a"
+      }
+    },
+    "owner": "olukullc-logistics"
   }
 }
