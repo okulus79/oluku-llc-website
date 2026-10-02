@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" role="img" aria-labelledby="title desc">
+  <title id="title">Oluku LLC branded box truck</title>
+  <desc id="desc">Navy cab and white Oluku Logistics box truck with olukullic.com on the cargo box.</desc>
+  <defs><linearGradient id="road" x2="0" y2="1"><stop stop-color="#f8fafc"/><stop offset="1" stop-color="#e8edf2"/></linearGradient><linearGradient id="cab" x2="0" y2="1"><stop stop-color="#173c68"/><stop offset="1" stop-color="#091d38"/></linearGradient></defs>
+  <rect width="720" height="300" fill="url(#road)"/><ellipse cx="382" cy="247" rx="277" ry="19" fill="#10233d" opacity=".12"/>
+  <rect x="95" y="55" width="378" height="151" rx="8" fill="#fdfefe" stroke="#cad3dd" stroke-width="3"/>
+  <path d="M473 151h102q26 0 39 26l26 47H463v-56q0-17 10-17Z" fill="url(#cab)"/>
+  <path d="M500 163h63q16 0 23 13l14 29h-100Z" fill="#dce8f2"/>
+  <path d="M96 174h375v27H96Z" fill="#c89b45"/><path d="M106 65h357v100H106Z" fill="#fff"/>
+  <circle cx="271" cy="103" r="17" fill="#c89b45"/><text x="271" y="109" fill="#0b2344" font-family="Arial,sans-serif" font-size="18" font-weight="700" text-anchor="middle">O</text>
+  <text x="298" y="108" fill="#0b2344" font-family="Arial,sans-serif" font-size="26" font-weight="800" letter-spacing="1">OLUKU LLC</text>
+  <text x="271" y="132" fill="#9a7028" font-family="Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="3">GLOBAL LOGISTICS</text>
+  <text x="271" y="151" fill="#0b2344" font-family="Arial,sans-serif" font-size="13" font-weight="700">www.olukullic.com</text>
+  <circle cx="179" cy="219" r="34" fill="#101b2a"/><circle cx="179" cy="219" r="18" fill="#b9c4d0"/><circle cx="179" cy="219" r="7" fill="#536170"/>
+  <circle cx="510" cy="219" r="34" fill="#101b2a"/><circle cx="510" cy="219" r="18" fill="#b9c4d0"/><circle cx="510" cy="219" r="7" fill="#536170"/>
+  <circle cx="584" cy="219" r="34" fill="#101b2a"/><circle cx="584" cy="219" r="18" fill="#b9c4d0"/><circle cx="584" cy="219" r="7" fill="#536170"/>
+</svg>

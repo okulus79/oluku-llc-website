@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" role="img" aria-labelledby="title desc">
+  <title id="title">Oluku LLC branded semi truck</title>
+  <desc id="desc">Oluku Logistics semi truck with navy cab, gold trim and company website on its white trailer.</desc>
+  <defs><linearGradient id="road" x2="0" y2="1"><stop stop-color="#f8fafc"/><stop offset="1" stop-color="#e8edf2"/></linearGradient><linearGradient id="cab" x2="0" y2="1"><stop stop-color="#173c68"/><stop offset="1" stop-color="#091d38"/></linearGradient></defs>
+  <rect width="720" height="300" fill="url(#road)"/><ellipse cx="371" cy="247" rx="301" ry="18" fill="#10233d" opacity=".12"/>
+  <rect x="54" y="77" width="421" height="125" rx="7" fill="#fff" stroke="#cbd5df" stroke-width="3"/>
+  <path d="M475 148h93q24 0 34 20l24 41H456v-39q0-22 19-22Z" fill="url(#cab)"/>
+  <path d="M495 159h58q15 0 21 13l13 25H495Z" fill="#dce8f2"/>
+  <path d="M55 171h412v25H55Z" fill="#c89b45"/>
+  <circle cx="226" cy="111" r="18" fill="#c89b45"/><text x="226" y="117" fill="#0b2344" font-family="Arial,sans-serif" font-size="19" font-weight="700" text-anchor="middle">O</text>
+  <text x="255" y="116" fill="#0b2344" font-family="Arial,sans-serif" font-size="28" font-weight="800" letter-spacing="1">OLUKU LLC</text>
+  <text x="226" y="142" fill="#9a7028" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="3">GLOBAL LOGISTICS</text>
+  <text x="226" y="160" fill="#0b2344" font-family="Arial,sans-serif" font-size="13" font-weight="700">www.olukullic.com</text>
+  <circle cx="103" cy="218" r="32" fill="#101b2a"/><circle cx="103" cy="218" r="17" fill="#b9c4d0"/><circle cx="103" cy="218" r="7" fill="#536170"/>
+  <circle cx="167" cy="218" r="32" fill="#101b2a"/><circle cx="167" cy="218" r="17" fill="#b9c4d0"/><circle cx="167" cy="218" r="7" fill="#536170"/>
+  <circle cx="516" cy="218" r="32" fill="#101b2a"/><circle cx="516" cy="218" r="17" fill="#b9c4d0"/><circle cx="516" cy="218" r="7" fill="#536170"/>
+  <circle cx="579" cy="218" r="32" fill="#101b2a"/><circle cx="579" cy="218" r="17" fill="#b9c4d0"/><circle cx="579" cy="218" r="7" fill="#536170"/>
+  <circle cx="632" cy="218" r="32" fill="#101b2a"/><circle cx="632" cy="218" r="17" fill="#b9c4d0"/><circle cx="632" cy="218" r="7" fill="#536170"/>
+</svg>

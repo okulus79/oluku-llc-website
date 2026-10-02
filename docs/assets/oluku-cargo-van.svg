@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" role="img" aria-labelledby="title desc">
+  <title id="title">Oluku LLC branded cargo van</title>
+  <desc id="desc">Navy and gold Oluku Logistics cargo van with olukullic.com on the side.</desc>
+  <defs><linearGradient id="road" x2="0" y2="1"><stop stop-color="#f8fafc"/><stop offset="1" stop-color="#e8edf2"/></linearGradient><linearGradient id="paint" x2="0" y2="1"><stop stop-color="#173c68"/><stop offset="1" stop-color="#091d38"/></linearGradient></defs>
+  <rect width="720" height="300" fill="url(#road)"/><ellipse cx="365" cy="246" rx="285" ry="20" fill="#10233d" opacity=".12"/>
+  <path d="M83 91q0-18 20-18h337q30 0 47 27l38 61h79q28 0 36 29l8 30q3 16-14 16H94q-17 0-17-18V99q0-8 6-8Z" fill="url(#paint)"/>
+  <path d="M488 106q-12-20-31-20h-20v75h90l-34-55Z" fill="#dce8f2"/><path d="M526 161h39q17 0 22 17l6 20h-67Z" fill="#dce8f2"/>
+  <path d="M97 82h338v119H91V96q0-14 6-14Z" fill="#f8fafc"/><path d="M96 178h463l6 23H91v-14Z" fill="#c89b45"/>
+  <circle cx="183" cy="218" r="35" fill="#101b2a"/><circle cx="183" cy="218" r="18" fill="#b9c4d0"/><circle cx="183" cy="218" r="7" fill="#536170"/>
+  <circle cx="516" cy="218" r="35" fill="#101b2a"/><circle cx="516" cy="218" r="18" fill="#b9c4d0"/><circle cx="516" cy="218" r="7" fill="#536170"/>
+  <path d="M98 102h116v57H98Z" fill="#e9f0f6"/><path d="M225 100h192v61H225Z" fill="#fff"/>
+  <circle cx="260" cy="119" r="14" fill="#c89b45"/><text x="260" y="124" fill="#0b2344" font-family="Arial,sans-serif" font-size="15" font-weight="700" text-anchor="middle">O</text>
+  <text x="282" y="124" fill="#0b2344" font-family="Arial,sans-serif" font-size="19" font-weight="800" letter-spacing="1">OLUKU LLC</text>
+  <text x="260" y="143" fill="#9a7028" font-family="Arial,sans-serif" font-size="9" font-weight="700" letter-spacing="2">GLOBAL LOGISTICS</text>
+  <text x="260" y="157" fill="#0b2344" font-family="Arial,sans-serif" font-size="10" font-weight="700">www.olukullic.com</text>
+</svg>
