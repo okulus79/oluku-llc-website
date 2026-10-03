@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" role="img" aria-labelledby="title desc">
   <title id="title">Oluku LLC branded cargo van</title>
-  <desc id="desc">Navy and gold Oluku Logistics cargo van with olukullic.com on the side.</desc>
+  <desc id="desc">Navy and gold Oluku Logistics cargo van with Olukullc.com on the side.</desc>
   <defs><linearGradient id="road" x2="0" y2="1"><stop stop-color="#f8fafc"/><stop offset="1" stop-color="#e8edf2"/></linearGradient><linearGradient id="paint" x2="0" y2="1"><stop stop-color="#173c68"/><stop offset="1" stop-color="#091d38"/></linearGradient></defs>
   <rect width="720" height="300" fill="url(#road)"/><ellipse cx="365" cy="246" rx="285" ry="20" fill="#10233d" opacity=".12"/>
   <path d="M83 91q0-18 20-18h337q30 0 47 27l38 61h79q28 0 36 29l8 30q3 16-14 16H94q-17 0-17-18V99q0-8 6-8Z" fill="url(#paint)"/>
@@ -12,5 +12,5 @@
   <circle cx="260" cy="119" r="14" fill="#c89b45"/><text x="260" y="124" fill="#0b2344" font-family="Arial,sans-serif" font-size="15" font-weight="700" text-anchor="middle">O</text>
   <text x="282" y="124" fill="#0b2344" font-family="Arial,sans-serif" font-size="19" font-weight="800" letter-spacing="1">OLUKU LLC</text>
   <text x="260" y="143" fill="#9a7028" font-family="Arial,sans-serif" font-size="9" font-weight="700" letter-spacing="2">GLOBAL LOGISTICS</text>
-  <text x="260" y="157" fill="#0b2344" font-family="Arial,sans-serif" font-size="10" font-weight="700">www.olukullic.com</text>
+  <text x="260" y="157" fill="#0b2344" font-family="Arial,sans-serif" font-size="10" font-weight="700">www.Olukullc.com</text>
 </svg>

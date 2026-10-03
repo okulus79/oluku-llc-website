@@ -62,6 +62,6 @@ Notes
 4. Add customer accounts and shipment history.
 5. Add push notifications for shipment milestones.
 6. Replace demo tracking status with real shipment events.
-7. Point `www.olukullic.com` to the deployed website.
+7. Point `www.Olukullc.com` to the deployed website.
 
 Brand/contact details used in this prototype are based on the supplied Oluku LLC flyer.
