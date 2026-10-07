@@ -5,18 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0b2344">
   <meta name="description" content="Oluku LLC Global Logistics — freight forwarding, express courier, packaging, cold-chain logistics, warehousing and fulfillment.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Oluku LLC | Global Logistics">
+  <meta property="og:description" content="One trusted logistics partner for local delivery, long-haul freight, and global shipping coordination.">
+  <meta property="og:url" content="https://www.olukullc.com/">
+  <meta name="twitter:card" content="summary">
+  <link rel="canonical" href="https://www.olukullc.com/">
   <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20261006">
   <title>Oluku LLC | Global Logistics</title>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <header class="topbar">
     <a class="brand" href="#home" aria-label="Oluku LLC home">
       <span class="brand-mark">O</span>
       <span><b>OLUKU</b><small>GLOBAL LOGISTICS</small></span>
     </a>
-    <button class="menu" aria-label="Open menu" onclick="toggleMenu()">☰</button>
-    <nav id="nav">
+    <button class="menu" aria-label="Open navigation" aria-controls="nav" aria-expanded="false" onclick="toggleMenu()">☰</button>
+    <nav id="nav" aria-label="Main navigation">
       <a href="#services">Services</a>
       <a href="#fleet">Our Fleet</a>
       <a href="#quote">Get a Quote</a>
@@ -24,29 +31,41 @@
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
+    <a class="nav-cta" href="#quote">Get a quote <span aria-hidden="true">↗</span></a>
   </header>
 
-  <main>
+  <main id="main-content">
     <section id="home" class="hero">
       <div class="hero-content">
-        <span class="eyebrow">MOVING POSSIBILITIES. DELIVERING EXCELLENCE.</span>
-        <h1>Global logistics<br><em>at your scale.</em></h1>
-        <p>Reliable freight forwarding, courier, packaging, warehousing and cold-chain solutions for businesses and individuals.</p>
+        <span class="eyebrow"><span class="eyebrow-line"></span> MOVING POSSIBILITIES. DELIVERING EXCELLENCE.</span>
+        <h1>Logistics that<br><em>moves you forward.</em></h1>
+        <p>One trusted logistics partner for local delivery, long-haul freight, and global shipping coordination.</p>
         <div class="actions">
-          <a class="btn gold" href="#quote">Request a Quote</a>
-          <a class="btn ghost" href="#track">Track a Shipment</a>
+          <a class="btn gold" href="#quote">Plan a shipment <span aria-hidden="true">↗</span></a>
+          <a class="btn ghost" href="#services">Explore services</a>
         </div>
-        <div class="hero-points">
-          <span>✓ Express Courier</span><span>✓ Air & Ocean Freight</span><span>✓ Cold Chain</span><span>✓ Fulfillment</span>
+        <div class="hero-proof">
+          <span class="proof-mark" aria-hidden="true">✳</span>
+          <span>From first mile to final delivery</span>
         </div>
       </div>
-      <div class="hero-card hero-qr-pair" aria-label="Website and app QR codes">
-        <div class="qr-pair">
-          <a href="https://okulus79.github.io/oluku-llc-website/" target="_blank" rel="noreferrer" aria-label="Open the Oluku website">
-            <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Fokulus79.github.io%2Foluku-llc-website%2F" alt="QR code for the Oluku website">
+      <div class="hero-visual">
+        <div class="visual-orbit orbit-one"></div>
+        <div class="visual-orbit orbit-two"></div>
+        <div class="visual-label"><span class="status-dot"></span> LOGISTICS, IN MOTION</div>
+        <img class="hero-truck hero-truck-main" src="assets/oluku-semi-truck.svg" alt="Illustration of an Oluku-branded semi truck" fetchpriority="high">
+        <div class="visual-caption">
+          <div><span>LOCAL · REGIONAL · GLOBAL</span><strong>Built to move what matters.</strong></div>
+          <a href="#fleet" aria-label="Explore the Oluku fleet">↗</a>
+        </div>
+        <div class="hero-qr-panel">
+          <a href="https://okulus79.github.io/oluku-llc-website/" target="_blank" rel="noreferrer">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Fokulus79.github.io%2Foluku-llc-website%2F" alt="">
+            <span>Visit our website</span>
           </a>
-          <a href="https://okulus79.github.io/oluku-llc-website/app-download.html" aria-label="View Oluku app availability">
-            <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Fokulus79.github.io%2Foluku-llc-website%2Fapp-download.html" alt="QR code for Oluku app information">
+          <a href="https://okulus79.github.io/oluku-llc-website/app-download.html">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Fokulus79.github.io%2Foluku-llc-website%2Fapp-download.html" alt="">
+            <span>App information</span>
           </a>
         </div>
       </div>
@@ -61,15 +80,15 @@
         </div>
         <div class="fleet-grid">
           <article class="fleet-card">
-            <img src="assets/oluku-cargo-van.svg" alt="Oluku LLC cargo van with company branding and Olukullc.com on its side">
+            <img src="assets/oluku-cargo-van.svg" alt="Oluku LLC cargo van with company branding and Olukullc.com on its side" loading="lazy">
             <div class="fleet-copy"><h3>Cargo Van</h3><p>Quick, flexible delivery for smaller local and regional shipments.</p></div>
           </article>
           <article class="fleet-card">
-            <img src="assets/oluku-box-truck.svg" alt="Oluku LLC box truck with company branding and Olukullc.com on its cargo box">
+            <img src="assets/oluku-box-truck.svg" alt="Oluku LLC box truck with company branding and Olukullc.com on its cargo box" loading="lazy">
             <div class="fleet-copy"><h3>Box Truck</h3><p>Room for palletized freight, equipment and larger local deliveries.</p></div>
           </article>
           <article class="fleet-card">
-            <img src="assets/oluku-semi-truck.svg" alt="Oluku LLC semi truck and trailer with company branding and Olukullc.com on the trailer">
+            <img src="assets/oluku-semi-truck.svg" alt="Oluku LLC semi truck and trailer with company branding and Olukullc.com on the trailer" loading="lazy">
             <div class="fleet-copy"><h3>Semi Truck</h3><p>Long-haul and full-truckload freight coordination.</p></div>
           </article>
         </div>
@@ -83,43 +102,46 @@
       </div>
     </section>
 
-    <section id="services" class="section">
+    <section id="services" class="section services-section">
       <div class="section-head">
         <span class="eyebrow">OUR SERVICES</span>
         <h2>One logistics partner. Multiple solutions.</h2>
+        <p>Find the right service for the way your shipment needs to move.</p>
       </div>
-      <div class="grid">
-        <article class="card"><div class="icon">🚚</div><h3>Ground Transport</h3><p>Flexible local and regional transportation for time-sensitive shipments.</p></article>
-        <article class="card"><div class="icon">🚐</div><h3>Cargo Van Delivery</h3><p>Flexible transport for documents, parcels and smaller local or regional shipments.</p></article>
-        <article class="card"><div class="icon">🚚</div><h3>Box Truck Freight</h3><p>Local and regional transport for palletized cargo, equipment and larger shipments.</p></article>
-        <article class="card"><div class="icon">🚛</div><h3>Semi-Truck Freight</h3><p>Long-haul and full-truckload freight coordination for larger shipments.</p></article>
-        <article class="card"><div class="icon">🚢</div><h3>Ocean Freight</h3><p>FCL/LCL coordination and global ocean shipping support.</p></article>
-        <article class="card"><div class="icon">✈️</div><h3>Air Freight</h3><p>Expedited international freight for urgent and high-value shipments.</p></article>
-        <article class="card"><div class="icon">📦</div><h3>Warehousing & Distribution</h3><p>Storage, order handling and fulfillment built around your operation.</p></article>
-        <article class="card"><div class="icon">⏱️</div><h3>Express Courier</h3><p>Fast document and parcel delivery with shipment visibility.</p></article>
-        <article class="card"><div class="icon">🎁</div><h3>Packaging & Crating</h3><p>Protective packaging and crating for domestic and international movement.</p></article>
-        <article class="card"><div class="icon">❄️</div><h3>Cold Chain Logistics</h3><p>Temperature-sensitive shipping support for products requiring controlled handling.</p></article>
-        <article class="card"><div class="icon">🌎</div><h3>Global Freight Forwarding</h3><p>End-to-end coordination from origin to destination.</p></article>
+      <label class="service-search"><span class="visually-hidden">Search logistics services</span><input id="serviceSearch" type="search" placeholder="Search our services..." aria-controls="serviceGrid"><span aria-hidden="true">⌕</span></label>
+      <p id="serviceResults" class="service-results" aria-live="polite"></p>
+      <div class="grid" id="serviceGrid">
+        <article class="card"><div class="icon" aria-hidden="true">↗</div><h3>Ground Transport</h3><p>Flexible local and regional transportation for time-sensitive shipments.</p></article>
+        <article class="card"><div class="icon" aria-hidden="true">▱</div><h3>Cargo Van Delivery</h3><p>Flexible transport for documents, parcels and smaller local or regional shipments.</p></article>
+        <article class="card"><div class="icon" aria-hidden="true">▰</div><h3>Box Truck Freight</h3><p>Local and regional transport for palletized cargo, equipment and larger shipments.</p></article>
+        <article class="card"><div class="icon" aria-hidden="true">⇢</div><h3>Semi-Truck Freight</h3><p>Long-haul and full-truckload freight coordination for larger shipments.</p></article>
+        <article class="card"><div class="icon" aria-hidden="true">≈</div><h3>Ocean Freight</h3><p>FCL/LCL coordination and global ocean shipping support.</p></article>
+        <article class="card"><div class="icon" aria-hidden="true">✳</div><h3>Air Freight</h3><p>Expedited international freight for urgent and high-value shipments.</p></article>
+        <article class="card"><div class="icon" aria-hidden="true">▦</div><h3>Warehousing & Distribution</h3><p>Storage, order handling and fulfillment built around your operation.</p></article>
+        <article class="card"><div class="icon" aria-hidden="true">◷</div><h3>Express Courier</h3><p>Fast document and parcel delivery with shipment visibility.</p></article>
+        <article class="card"><div class="icon" aria-hidden="true">◇</div><h3>Packaging & Crating</h3><p>Protective packaging and crating for domestic and international movement.</p></article>
+        <article class="card"><div class="icon" aria-hidden="true">❄</div><h3>Cold Chain Logistics</h3><p>Temperature-sensitive shipping support for products requiring controlled handling.</p></article>
+        <article class="card"><div class="icon" aria-hidden="true">◎</div><h3>Global Freight Forwarding</h3><p>End-to-end coordination from origin to destination.</p></article>
       </div>
     </section>
 
     <section id="quote" class="section dark-section">
       <div class="two-col">
-        <div>
+        <div class="about-copy">
           <span class="eyebrow">REQUEST A QUOTE</span>
           <h2>Tell us what you need moved.</h2>
-          <p>Submit shipment details and Oluku LLC can follow up with routing and pricing options.</p>
-          <div class="mini-stats"><div><b>24/7</b><span>Shipment support</span></div><div><b>Global</b><span>Freight coordination</span></div></div>
+          <p>Share your route and shipment details. Your email app will open with a ready-to-send quote request.</p>
+          <a class="quote-phone" href="tel:+12409783987"><span>Prefer to talk?</span><strong>(240) 978-3987 ↗</strong></a>
         </div>
         <form id="quoteForm" class="form">
-          <input required name="name" placeholder="Full name">
-          <input required type="email" name="email" placeholder="Email address">
-          <input name="phone" placeholder="Phone number">
-          <div class="form-row"><input required name="origin" placeholder="Origin"><input required name="destination" placeholder="Destination"></div>
-          <div class="form-row"><select name="service"><option>Ground Transport</option><option>Cargo Van Delivery</option><option>Box Truck Freight</option><option>Semi-Truck Freight</option><option>Air Freight</option><option>Ocean Freight</option><option>Express Courier</option><option>Cold Chain</option><option>Warehousing & Fulfillment</option></select><input name="weight" placeholder="Approx. weight"></div>
-          <textarea name="details" rows="4" placeholder="Shipment details"></textarea>
-          <button class="btn gold" type="submit">Submit Quote Request</button>
-          <p id="quoteStatus" class="status"></p>
+          <label>Your name<input required name="name" autocomplete="name" placeholder="Full name"></label>
+          <label>Email address<input required type="email" name="email" autocomplete="email" placeholder="you@company.com"></label>
+          <label>Phone number <span class="optional">(optional)</span><input name="phone" type="tel" autocomplete="tel" placeholder="(000) 000-0000"></label>
+          <div class="form-row"><label>Pickup location<input required name="origin" placeholder="City, state or country"></label><label>Delivery location<input required name="destination" placeholder="City, state or country"></label></div>
+          <div class="form-row"><label>Service<select name="service"><option>Ground Transport</option><option>Cargo Van Delivery</option><option>Box Truck Freight</option><option>Semi-Truck Freight</option><option>Air Freight</option><option>Ocean Freight</option><option>Express Courier</option><option>Cold Chain Logistics</option><option>Warehousing & Fulfillment</option></select></label><label>Approximate weight <span class="optional">(optional)</span><input name="weight" placeholder="e.g. 500 lb"></label></div>
+          <label>Shipment details <span class="optional">(optional)</span><textarea name="details" rows="3" placeholder="Package size, timing, special handling..."></textarea></label>
+          <button class="btn gold" type="submit">Prepare quote email <span aria-hidden="true">↗</span></button>
+          <p id="quoteStatus" class="status" role="status" aria-live="polite"></p>
         </form>
       </div>
     </section>
@@ -128,11 +150,12 @@
       <div class="section-head">
         <span class="eyebrow">SHIPMENT VISIBILITY</span>
         <h2>Track your shipment</h2>
-        <p>Enter a tracking number to view the demo tracking workflow. Connect this form to your carrier/TMS API for live tracking.</p>
+        <p>This preview shows the tracking request format. Live carrier tracking will be available when shipment updates are connected.</p>
       </div>
       <form id="trackForm" class="track-form">
-        <input id="trackingNumber" placeholder="Example: OLU-2026-00125" required>
-        <button class="btn navy" type="submit">Track Shipment</button>
+        <label class="visually-hidden" for="trackingNumber">Shipment tracking number</label>
+        <input id="trackingNumber" placeholder="Enter your tracking number" required>
+        <button class="btn navy" type="submit">Check demo status <span aria-hidden="true">↗</span></button>
       </form>
       <div id="trackingResult" class="tracking-result hidden"></div>
     </section>
@@ -164,7 +187,8 @@
     </section>
   </main>
 
-  <footer><span>© 2026 Oluku LLC Global Logistics</span><span>Moving possibilities. Delivering excellence.</span></footer>
-  <script src="app.js"></script>
+  <footer><span>© <span id="currentYear">2026</span> Oluku LLC Global Logistics</span><span>Moving possibilities. Delivering excellence.</span><a href="https://www.olukullc.com/">www.Olukullc.com ↗</a></footer>
+  <a class="back-to-top" href="#home" aria-label="Back to top">↑</a>
+  <script src="app.js?v=20261006"></script>
 </body>
 </html>
