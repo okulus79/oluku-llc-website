@@ -76,14 +76,14 @@ nav a:hover, nav a[aria-current="location"] { color: var(--gold-light); }
 .status-dot { width: 7px; height: 7px; border-radius: 50%; background: #82c49a; box-shadow: 0 0 0 4px rgba(130,196,154,.13); }
 .hero-truck { position: absolute; z-index: 1; height: auto; filter: drop-shadow(0 17px 16px rgba(0,0,0,.21)); }
 .hero-truck-main { top: 87px; left: 7%; width: 92%; }
-.visual-caption { position: absolute; z-index: 3; right: 18px; bottom: 90px; left: 18px; display: flex; align-items: center; justify-content: space-between; gap: 15px; padding: 14px 17px; border: 1px solid rgba(255,255,255,.16); border-radius: 13px; background: rgba(7,23,45,.77); backdrop-filter: blur(10px); }
+.visual-caption { position: absolute; z-index: 3; right: 18px; bottom: 165px; left: 18px; display: flex; align-items: center; justify-content: space-between; gap: 15px; padding: 14px 17px; border: 1px solid rgba(255,255,255,.16); border-radius: 13px; background: rgba(7,23,45,.77); backdrop-filter: blur(10px); }
 .visual-caption span { display: block; margin-bottom: 5px; color: var(--gold-light); font-size: 8px; font-weight: 800; letter-spacing: .14em; }
 .visual-caption strong { font-size: 14px; font-weight: 650; }
 .visual-caption > a { display: grid; width: 34px; height: 34px; flex: 0 0 auto; place-items: center; color: var(--navy-deep); background: var(--gold-light); border-radius: 50%; font-weight: 800; }
-.hero-qr-panel { position: absolute; z-index: 4; right: 16px; bottom: 15px; left: 16px; display: flex; justify-content: flex-end; gap: 10px; }
-.hero-qr-panel a { display: flex; align-items: center; gap: 8px; padding: 6px 10px 6px 6px; color: var(--white); border: 1px solid rgba(255,255,255,.15); border-radius: 9px; background: rgba(7,23,45,.82); font-size: 9px; font-weight: 700; }
-.hero-qr-panel img { width: 32px; height: 32px; padding: 2px; background: var(--white); border-radius: 4px; }
-.hero-qr-panel a:hover { border-color: var(--gold-light); }
+.hero-qr-panel { position: absolute; z-index: 4; right: 16px; bottom: 13px; left: 16px; display: flex; align-items: stretch; justify-content: center; gap: 12px; }
+.hero-qr-panel a { display: flex; width: 142px; flex-direction: column; align-items: center; justify-content: center; gap: 7px; padding: 8px 9px 9px; color: var(--navy); border: 1px solid rgba(11,35,68,.12); border-radius: 11px; background: var(--white); box-shadow: 0 8px 22px rgba(0,0,0,.19); font-size: 10px; font-weight: 800; text-align: center; transition: transform .2s ease, box-shadow .2s ease; }
+.hero-qr-panel a:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(0,0,0,.25); }
+.hero-qr-panel img { display: block; width: clamp(92px, 8vw, 108px); height: auto; aspect-ratio: 1; padding: 4px; border: 1px solid #e7eaf0; background: var(--white); image-rendering: pixelated; }
 
 .section { max-width: 1400px; margin: 0 auto; padding: 100px 7%; scroll-margin-top: 78px; }
 .section-head { max-width: 770px; margin-bottom: 38px; }
@@ -219,11 +219,11 @@ footer a:hover { text-decoration: underline; }
   .hero-visual { min-height: 355px; border-radius: 17px; }
   .hero-truck-main { top: 87px; left: 2%; width: 105%; }
   .visual-label { top: 18px; left: 17px; font-size: 8px; }
-  .visual-caption { right: 10px; bottom: 83px; left: 10px; padding: 11px 12px; }
+  .visual-caption { right: 10px; bottom: 142px; left: 10px; padding: 11px 12px; }
   .visual-caption strong { font-size: 12px; }
-  .hero-qr-panel { right: 9px; bottom: 9px; left: 9px; gap: 6px; }
-  .hero-qr-panel a { gap: 6px; padding: 5px 7px 5px 5px; font-size: 8px; }
-  .hero-qr-panel img { width: 28px; height: 28px; }
+  .hero-qr-panel { right: 9px; bottom: 9px; left: 9px; gap: 8px; }
+  .hero-qr-panel a { width: min(42%, 132px); gap: 5px; padding: 6px; font-size: 9px; }
+  .hero-qr-panel img { width: clamp(72px, 22vw, 88px); }
   .section { padding: 72px 6%; }
   .section h2 { font-size: clamp(34px, 9vw, 45px); }
   .fleet-card { grid-template-columns: 1fr; }
