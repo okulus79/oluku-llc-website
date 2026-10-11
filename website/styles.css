@@ -171,6 +171,10 @@ footer a { color: var(--gold-light); font-weight: 700; }
 footer a:hover { text-decoration: underline; }
 .back-to-top { position: fixed; z-index: 15; right: 20px; bottom: 20px; display: grid; width: 44px; height: 44px; place-items: center; color: var(--navy); border: 1px solid rgba(11,35,68,.08); border-radius: 50%; background: var(--gold-light); box-shadow: 0 8px 24px rgba(7,23,45,.2); font-size: 20px; font-weight: 800; opacity: 0; pointer-events: none; transform: translateY(8px); transition: opacity .2s ease, transform .2s ease; }
 .back-to-top.is-visible { opacity: 1; pointer-events: auto; transform: translateY(0); }
+.faq-section { max-width: 1040px; }
+.faq-list details { padding: 15px 0; border-bottom: 1px solid var(--line); }
+.faq-list summary { color: var(--navy); font-weight: 700; cursor: pointer; }
+.faq-list details p { max-width: 850px; margin: 10px 0 0; color: var(--muted); font-size: 14px; line-height: 1.7; }
 .app-page { display: grid; min-height: 100vh; place-items: center; padding: 32px; color: var(--white); background: linear-gradient(120deg, var(--navy-deep), var(--navy)); }
 .app-card { width: min(100%, 680px); padding: clamp(28px, 6vw, 56px); border: 1px solid rgba(255,255,255,.14); border-radius: 20px; background: rgba(255,255,255,.06); text-align: center; }
 .app-card .brand-mark { margin: 0 auto 20px; }
