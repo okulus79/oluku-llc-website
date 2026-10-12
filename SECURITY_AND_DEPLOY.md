@@ -99,3 +99,12 @@ This file contains immediate, actionable steps to revoke any exposed tokens, cre
 
 
 Security reminder: never paste secrets into chat, issue trackers, or public code. Use secret stores (CI secrets, OS credential managers) and short-lived tokens when possible.
+
+Website security notes
+
+- GitHub Pages serves this site over HTTPS, with HTTPS enforcement enabled for the custom domain.
+- The site's Content Security Policy is also declared in page metadata. GitHub Pages does not let this repository set arbitrary response headers, so protections such as `X-Frame-Options`, `Permissions-Policy`, and header-only `frame-ancestors` cannot be enabled there through these files.
+- `netlify.toml` and `vercel.json` configure those response headers if the site is deployed on Netlify or Vercel instead.
+- The quote form only creates an email draft in the visitor's email app. The website does not receive or store it. Customers should not email payment-card details, passwords, or sensitive documents.
+- The tracking form is a demonstration and does not connect to carrier data. Do not enter confidential shipment information into it.
+- A real online quote intake or carrier-tracking service needs a secured backend, input validation, access controls, and an appropriate privacy notice; never place provider API keys in browser code.

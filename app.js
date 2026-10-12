@@ -11,6 +11,8 @@ window.toggleMenu = function toggleMenu() {
   setMenuOpen(menuButton.getAttribute("aria-expanded") !== "true");
 };
 
+menuButton.addEventListener("click", window.toggleMenu);
+
 nav.querySelectorAll("a").forEach(link => {
   link.addEventListener("click", () => setMenuOpen(false));
 });
