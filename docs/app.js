@@ -65,9 +65,16 @@ document.getElementById("trackForm").addEventListener("submit", event => {
   const result = document.getElementById("trackingResult");
   const number = document.createElement("strong");
   const message = document.createElement("p");
+  const phone = document.createElement("a");
+  const email = document.createElement("a");
 
-  number.textContent = `Demo tracking request: ${trackingNumber}`;
-  message.textContent = "This site preview is not connected to live carrier tracking. Contact Oluku for shipment updates.";
+  number.textContent = `Shipment: ${trackingNumber}`;
+  message.append("Live tracking isn't connected yet. For an update, call ");
+  phone.href = "tel:+12409783987";
+  phone.textContent = "(240) 978-3987";
+  email.href = "mailto:lukeman.ibrahim@live.com";
+  email.textContent = "email Oluku";
+  message.append(phone, " or ", email, ".");
   result.replaceChildren(number, message);
   result.classList.remove("hidden");
 });

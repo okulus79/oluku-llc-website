@@ -124,6 +124,7 @@
         <article class="card"><div class="icon" aria-hidden="true">❄</div><h3>Cold Chain Logistics</h3><p>Temperature-sensitive shipping support for products requiring controlled handling.</p></article>
         <article class="card"><div class="icon" aria-hidden="true">◎</div><h3>Global Freight Forwarding</h3><p>End-to-end coordination from origin to destination.</p></article>
       </div>
+      <p class="service-note">Service availability, handling requirements, and pricing are confirmed for each shipment before booking.</p>
     </section>
 
     <section id="quote" class="section dark-section">
@@ -131,7 +132,7 @@
         <div class="about-copy">
           <span class="eyebrow">REQUEST A QUOTE</span>
           <h2>Tell us what you need moved.</h2>
-          <p>Share your route and shipment details. Your email app will open with a ready-to-send quote request.</p>
+          <p>Share the pickup and delivery locations, shipment type, approximate weight, and timing. Your email app will open with a draft for you to review and send. Oluku can then confirm availability, pricing, and next steps.</p>
           <a class="quote-phone" href="tel:+12409783987"><span>Prefer to talk?</span><strong>(240) 978-3987 ↗</strong></a>
         </div>
         <form id="quoteForm" class="form">
@@ -151,14 +152,14 @@
       <div class="section-head">
         <span class="eyebrow">SHIPMENT VISIBILITY</span>
         <h2>Track your shipment</h2>
-        <p>This preview shows the tracking request format. Live carrier tracking will be available when shipment updates are connected.</p>
+        <p>Live carrier tracking is not connected yet. Contact Oluku by phone or email for an update on an existing shipment.</p>
       </div>
       <form id="trackForm" class="track-form">
         <label class="visually-hidden" for="trackingNumber">Shipment tracking number</label>
         <input id="trackingNumber" placeholder="Enter your tracking number" required>
         <button class="btn navy" type="submit">Check demo status <span aria-hidden="true">↗</span></button>
       </form>
-      <div id="trackingResult" class="tracking-result hidden"></div>
+      <div id="trackingResult" class="tracking-result hidden" aria-live="polite"></div>
     </section>
 
     <section id="faq" class="section faq-section">
@@ -169,11 +170,15 @@
       <div class="faq-list">
         <details>
           <summary>How do I request a quote?</summary>
-          <p>Complete the quote form with your route and shipment details. It opens your email app with a draft for you to review and send.</p>
+          <p>Complete the quote form with your pickup and delivery locations, service, shipment details, and timing. It opens your email app with a draft for you to review and send. No request is sent until you send that email.</p>
         </details>
         <details>
           <summary>Is shipment tracking live on this website?</summary>
-          <p>No. The tracking form is a demonstration and is not connected to carrier systems. Contact Oluku directly for shipment updates.</p>
+          <p>No. This website is not connected to carrier systems and does not retrieve shipment locations. Contact Oluku by phone or email for an update.</p>
+        </details>
+        <details>
+          <summary>Are all services available for every route?</summary>
+          <p>Availability depends on the route, shipment, and handling requirements. Oluku confirms service options and pricing for each request before booking.</p>
         </details>
       </div>
     </section>
