@@ -171,6 +171,13 @@ nav a:hover, nav a[aria-current="location"] { color: var(--gold-light); }
 footer { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px; padding: 23px 7%; color: #aebaca; background: #061426; font-size: 11px; }
 footer a { color: var(--gold-light); font-weight: 700; }
 footer a:hover { text-decoration: underline; }
+.terms-policy { max-width: 1000px; }
+.terms-policy h1 { margin: 12px 0; color: var(--navy); font-size: clamp(38px, 6vw, 58px); letter-spacing: -.05em; }
+.terms-policy h2 { margin: 34px 0 10px; color: var(--navy); font-size: 23px; letter-spacing: -.025em; }
+.terms-policy p, .terms-policy li { color: var(--muted); line-height: 1.8; }
+.terms-policy ul { padding-left: 24px; }
+.terms-policy .terms-updated { font-size: 14px; }
+.terms-back { display: inline-flex; margin-top: 20px; color: var(--navy); font-weight: 800; text-decoration: underline; text-underline-offset: 3px; }
 .back-to-top { position: fixed; z-index: 15; right: 20px; bottom: 20px; display: grid; width: 44px; height: 44px; place-items: center; color: var(--navy); border: 1px solid rgba(11,35,68,.08); border-radius: 50%; background: var(--gold-light); box-shadow: 0 8px 24px rgba(7,23,45,.2); font-size: 20px; font-weight: 800; opacity: 0; pointer-events: none; transform: translateY(8px); transition: opacity .2s ease, transform .2s ease; }
 .back-to-top.is-visible { opacity: 1; pointer-events: auto; transform: translateY(0); }
 .faq-section { max-width: 1040px; }
