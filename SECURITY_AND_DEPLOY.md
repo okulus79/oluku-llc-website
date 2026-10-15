@@ -107,4 +107,5 @@ Website security notes
 - `netlify.toml` and `vercel.json` configure those response headers if the site is deployed on Netlify or Vercel instead.
 - The quote form only creates an email draft in the visitor's email app. The website does not receive or store it. Customers should not email payment-card details, passwords, or sensitive documents.
 - The tracking form is a demonstration and does not connect to carrier data. Do not enter confidential shipment information into it.
-- A real online quote intake or carrier-tracking service needs a secured backend, input validation, access controls, and an appropriate privacy notice; never place provider API keys in browser code.
+- The public privacy notice is at `privacy.html`. Update it before adding analytics, advertising tools, server-side quote intake, user accounts, or live carrier tracking.
+- A real online quote intake or carrier-tracking service needs a secured backend, input validation, access controls, and an updated privacy notice; never place provider API keys in browser code.
