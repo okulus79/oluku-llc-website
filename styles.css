@@ -279,3 +279,64 @@ footer a:hover { text-decoration: underline; }
   .vehicle-box-truck { left: 36%; width: 28%; }
   .vehicle-semi-truck { left: 67%; width: 28%; }
 }
+
+.digital-card-page { min-height: 100vh; background: var(--paper); }
+.digital-card-topbar { position: relative; }
+.digital-card-main { width: min(100% - 40px, 1080px); margin: 0 auto; padding: clamp(44px, 8vw, 88px) 0 76px; }
+.digital-card-intro { max-width: 690px; margin: 0 auto 38px; text-align: center; }
+.digital-card-intro h1 { margin: 14px 0 12px; color: var(--navy); font-size: clamp(38px, 6vw, 58px); letter-spacing: -.055em; line-height: 1.04; }
+.digital-card-intro p { margin: 0; color: var(--muted); font-size: 16px; line-height: 1.7; }
+.digital-card-layout { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(280px, .8fr); align-items: center; gap: clamp(24px, 5vw, 64px); }
+.digital-pass { position: relative; display: flex; min-height: 385px; flex-direction: column; justify-content: space-between; overflow: hidden; padding: clamp(24px, 4vw, 38px); color: var(--white); border: 1px solid rgba(255,255,255,.16); border-radius: 26px; background: radial-gradient(ellipse at 94% 6%, rgba(74,111,150,.54), transparent 43%), linear-gradient(145deg, #122f53, #07172d 75%); box-shadow: 0 28px 65px rgba(7,23,45,.24); }
+.digital-pass::before, .digital-pass::after { position: absolute; width: 260px; height: 260px; border: 1px solid rgba(240,207,133,.12); border-radius: 50%; content: ""; pointer-events: none; }
+.digital-pass::before { top: -140px; right: -85px; }
+.digital-pass::after { right: -165px; bottom: -180px; width: 370px; height: 370px; border-color: rgba(255,255,255,.08); }
+.digital-pass-top, .digital-pass-identity, .digital-pass-bottom { position: relative; z-index: 1; }
+.digital-pass-top { display: flex; align-items: center; justify-content: space-between; gap: 14px; }
+.digital-pass-brand { display: flex; align-items: center; gap: 12px; }
+.digital-pass-brand .brand-mark { width: 46px; height: 46px; }
+.digital-pass-brand b { display: block; font-size: 15px; letter-spacing: .17em; }
+.digital-pass-brand small { display: block; margin-top: 4px; color: var(--gold-light); font-size: 8px; font-weight: 800; letter-spacing: .17em; }
+.digital-pass-label { color: #d6e1ed; font-size: 9px; font-weight: 800; letter-spacing: .14em; text-align: right; }
+.digital-pass-identity { margin: 30px 0 25px; }
+.digital-pass-identity h2 { margin: 0 0 5px; font-size: clamp(28px, 4vw, 40px); letter-spacing: -.04em; line-height: 1.12; }
+.digital-pass-identity p { margin: 0; color: #c5d1df; font-size: 14px; line-height: 1.65; }
+.digital-pass-identity .digital-pass-role { margin-bottom: 13px; color: var(--gold-light); font-size: 11px; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
+.digital-pass-bottom { display: flex; align-items: end; justify-content: space-between; gap: 18px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,.16); }
+.digital-pass-links { display: grid; gap: 8px; color: #e4eaf1; font-size: 12px; }
+.digital-pass-links a { width: fit-content; text-underline-offset: 3px; }
+.digital-pass-links a:hover { color: var(--gold-light); text-decoration: underline; }
+.digital-pass-qr { width: 74px; height: 74px; flex: 0 0 auto; padding: 5px; background: #fff; border-radius: 8px; }
+.digital-card-actions { display: grid; gap: 12px; }
+.digital-card-actions .btn { width: 100%; }
+.digital-card-actions .btn svg { width: 18px; height: 18px; }
+.digital-card-note { margin: 16px 0 0; padding: 15px 16px; color: #4e5d70; border: 1px solid #e4dfd1; border-radius: 12px; background: rgba(255,255,255,.62); font-size: 13px; line-height: 1.65; }
+.digital-card-note strong { color: var(--navy); }
+.digital-card-wallet-status { display: flex; flex-wrap: wrap; justify-content: center; gap: 9px; margin-top: 34px; }
+.digital-card-wallet-status span { display: inline-flex; align-items: center; gap: 8px; padding: 10px 13px; color: #425269; border: 1px solid #e3e7ec; border-radius: 999px; background: rgba(255,255,255,.76); font-size: 12px; font-weight: 700; }
+.digital-card-wallet-status span::before { width: 7px; height: 7px; border-radius: 50%; background: var(--gold); content: ""; }
+.digital-card-footer { color: #d7e0ea; background: var(--navy-deep); }
+.digital-card-footer a { color: var(--gold-light); }
+@media (max-width: 760px) {
+  .digital-card-layout { max-width: 560px; grid-template-columns: 1fr; margin: 0 auto; }
+  .digital-card-actions { grid-template-columns: 1fr 1fr; }
+  .digital-card-note { grid-column: 1 / -1; margin-top: 2px; }
+}
+@media (max-width: 480px) {
+  .digital-card-main { width: min(100% - 28px, 1080px); padding-top: 42px; }
+  .digital-card-intro { margin-bottom: 26px; text-align: left; }
+  .digital-pass { min-height: 350px; padding: 21px; border-radius: 21px; }
+  .digital-pass-top { align-items: flex-start; }
+  .digital-pass-brand { gap: 9px; }
+  .digital-pass-brand .brand-mark { width: 40px; height: 40px; font-size: 20px; }
+  .digital-pass-brand b { font-size: 13px; }
+  .digital-pass-brand small { font-size: 7px; }
+  .digital-pass-label { max-width: 95px; padding-top: 4px; font-size: 8px; line-height: 1.5; }
+  .digital-pass-identity { margin: 25px 0 20px; }
+  .digital-pass-identity h2 { font-size: 30px; }
+  .digital-pass-bottom { gap: 10px; }
+  .digital-pass-links { font-size: 11px; }
+  .digital-pass-qr { width: 64px; height: 64px; }
+  .digital-card-actions { grid-template-columns: 1fr; }
+  .digital-card-note { grid-column: auto; }
+}
