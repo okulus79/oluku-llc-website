@@ -76,7 +76,7 @@ nav a:hover, nav a[aria-current="location"] { color: var(--gold-light); }
 .visual-label { position: absolute; z-index: 2; top: 24px; left: 25px; display: flex; align-items: center; gap: 9px; color: #dce6f0; font-size: 9px; font-weight: 800; letter-spacing: .16em; }
 .status-dot { width: 7px; height: 7px; border-radius: 50%; background: #82c49a; box-shadow: 0 0 0 4px rgba(130,196,154,.13); }
 .hero-truck { position: absolute; z-index: 1; height: auto; filter: drop-shadow(0 17px 16px rgba(0,0,0,.21)); }
-.hero-truck-main { top: 87px; left: 7%; width: 92%; }
+.hero-truck-main { top: 70px; left: 7%; width: 86%; height: 240px; border: 1px solid rgba(255,255,255,.25); border-radius: 14px; background: #edf1f5; object-fit: cover; object-position: center 62%; }
 .visual-caption { position: absolute; z-index: 3; right: 18px; bottom: 165px; left: 18px; display: flex; align-items: center; justify-content: space-between; gap: 15px; padding: 14px 17px; border: 1px solid rgba(255,255,255,.16); border-radius: 13px; background: rgba(7,23,45,.77); backdrop-filter: blur(10px); }
 .visual-caption span { display: block; margin-bottom: 5px; color: var(--gold-light); font-size: 8px; font-weight: 800; letter-spacing: .14em; }
 .visual-caption strong { font-size: 14px; font-weight: 650; }
@@ -92,21 +92,16 @@ nav a:hover, nav a[aria-current="location"] { color: var(--gold-light); }
 .section-head > p { max-width: 650px; margin: 0; color: var(--muted); font-size: 16px; line-height: 1.75; }
 .fleet-section { max-width: none; background: var(--paper); }
 .fleet-inner { max-width: 1240px; margin: auto; }
-.fleet-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 19px; }
+.fleet-grid { display: grid; max-width: 980px; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
 .fleet-card { overflow: hidden; border: 1px solid #e8e7e2; border-radius: 16px; background: var(--white); box-shadow: 0 10px 35px rgba(18,35,58,.055); transition: transform .25s ease, box-shadow .25s ease; }
 .fleet-card:hover { transform: translateY(-5px); box-shadow: 0 20px 42px rgba(18,35,58,.12); }
-.fleet-card img { display: block; width: 100%; aspect-ratio: 720 / 300; background: #edf1f5; object-fit: cover; }
+.fleet-card img { display: block; width: 100%; aspect-ratio: 16 / 9; background: #edf1f5; object-fit: cover; }
+.fleet-card:first-child img { object-position: center 58%; }
 .fleet-copy { padding: 19px 21px 22px; }
 .fleet-copy h3 { margin: 0 0 7px; color: var(--navy); font-size: 18px; letter-spacing: -.02em; }
 .fleet-copy p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.7; }
-.fleet-road { position: relative; height: 160px; overflow: hidden; margin-top: 27px; border-radius: 14px; background: linear-gradient(180deg, #e6edf4, #f4f5f3 70%, #26354b 70%); }
-.road-centerline { position: absolute; right: 0; bottom: 22px; left: 0; border-top: 2px dashed var(--gold-light); }
-.fleet-vehicle { position: absolute; bottom: 18px; left: 0; width: clamp(170px, 22vw, 240px); height: auto; animation: fleet-drive 24s linear infinite; }
-.vehicle-van { animation-delay: 0s; }
-.vehicle-box-truck { animation-delay: -8s; }
-.vehicle-semi-truck { animation-delay: -16s; }
-.fleet-disclaimer { margin: 11px 0 0; color: var(--muted); font-size: 11px; text-align: center; }
-@keyframes fleet-drive { from { transform: translateX(-110%); } to { transform: translateX(calc(100vw + 110%)); } }
+.fleet-disclaimer { max-width: 980px; margin: 14px auto 0; color: var(--muted); font-size: 11px; line-height: 1.75; text-align: center; }
+.fleet-disclaimer a { color: var(--navy); text-decoration: underline; text-underline-offset: 2px; }
 
 .services-section { padding-top: 105px; padding-bottom: 110px; }
 .service-search { position: relative; display: block; max-width: 440px; margin: 0 0 24px; }
@@ -243,7 +238,7 @@ footer a:hover { text-decoration: underline; }
   .actions { gap: 9px; }
   .btn { min-height: 46px; padding: 12px 14px; font-size: 12px; }
   .hero-visual { min-height: 355px; border-radius: 17px; }
-  .hero-truck-main { top: 87px; left: 2%; width: 105%; }
+  .hero-truck-main { top: 62px; left: 8%; width: 84%; height: 190px; }
   .visual-label { top: 18px; left: 17px; font-size: 8px; }
   .visual-caption { right: 10px; bottom: 142px; left: 10px; padding: 11px 12px; }
   .visual-caption strong { font-size: 12px; }
@@ -255,8 +250,6 @@ footer a:hover { text-decoration: underline; }
   .fleet-card { grid-template-columns: 1fr; }
   .fleet-card img { height: auto; min-height: 0; }
   .fleet-copy { padding: 17px 18px 19px; }
-  .fleet-road { height: 130px; }
-  .fleet-vehicle { bottom: 15px; width: 190px; }
   .grid { grid-template-columns: 1fr; gap: 10px; }
   .card { min-height: 0; padding: 15px; }
   .service-art { height: 98px; margin-bottom: 13px; }
@@ -280,10 +273,6 @@ footer a:hover { text-decoration: underline; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
-  .fleet-vehicle { animation: none; transform: none; }
-  .vehicle-van { left: 5%; width: 28%; }
-  .vehicle-box-truck { left: 36%; width: 28%; }
-  .vehicle-semi-truck { left: 67%; width: 28%; }
   .card, .service-art svg { transform: none !important; }
 }
 
