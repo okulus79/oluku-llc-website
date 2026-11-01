@@ -42,23 +42,51 @@ serviceSearch.addEventListener("input", () => {
       : "No matching services. Try another search.";
 });
 
-document.getElementById("quoteForm").addEventListener("submit", event => {
+document.getElementById("quoteForm").addEventListener("submit", async event => {
   event.preventDefault();
-  const formData = new FormData(event.currentTarget);
-  const details = [...formData.entries()]
-    .filter(([, value]) => String(value).trim())
-    .map(([key, value]) => `${key.charAt(0).toUpperCase()}${key.slice(1)}: ${String(value).trim()}`)
-    .join("\n");
+  const form = event.currentTarget;
+  const formData = new FormData(form);
   const subject = `Quote request: ${formData.get("origin")} to ${formData.get("destination")}`;
-  const mailto = `mailto:lukeman.ibrahim@live.com?${new URLSearchParams({ subject, body: details })}`;
+  formData.set("_subject", subject);
   const status = document.getElementById("quoteStatus");
-  const manualEmail = document.createElement("a");
+  const submitButton = form.querySelector('button[type="submit"]');
+  const emailFallback = document.createElement("a");
 
-  status.replaceChildren(document.createTextNode("Opening your email app with the quote details. If it doesn't open, "));
-  manualEmail.href = "mailto:lukeman.ibrahim@live.com";
-  manualEmail.textContent = "email Oluku directly";
-  status.append(manualEmail, document.createTextNode("."));
-  window.location.href = mailto;
+  emailFallback.href = "mailto:lukeman.ibrahim@live.com";
+  emailFallback.textContent = "email Oluku directly";
+  submitButton.disabled = true;
+  form.setAttribute("aria-busy", "true");
+  status.textContent = "Sending your quote request...";
+
+  try {
+    const response = await fetch(form.action, {
+      method: form.method.toUpperCase(),
+      body: formData,
+      headers: { Accept: "application/json" }
+    });
+
+    if (!response.ok) {
+      status.replaceChildren(
+        document.createTextNode(`Your request wasn't accepted (HTTP ${response.status}). Please try again or `),
+        emailFallback,
+        document.createTextNode(".")
+      );
+      return;
+    }
+
+    form.reset();
+    status.textContent = "Your quote request was sent. Oluku will follow up using the contact details you provided.";
+  } catch (error) {
+    console.error("Quote request submission failed.", error);
+    status.replaceChildren(
+      document.createTextNode("We couldn't connect to the quote service. Please try again or "),
+      emailFallback,
+      document.createTextNode(".")
+    );
+  } finally {
+    submitButton.disabled = false;
+    form.removeAttribute("aria-busy");
+  }
 });
 
 document.getElementById("trackForm").addEventListener("submit", event => {

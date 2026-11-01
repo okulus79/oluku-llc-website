@@ -17,7 +17,7 @@ This repository is already configured for static deploys to Netlify/Vercel from 
 The website includes:
 - Oluku-branded navy/gold visual system
 - Services section
-- Quote request form UI
+- Quote request form submits to Formspree; see the public privacy notice for third-party processing details.
 - Shipment tracking UI (demo until connected to a carrier/TMS API)
 - Contact section
 - Mobile navigation
@@ -56,7 +56,7 @@ Notes
 - If Metro reports cache or TypeScript errors after dependency changes, restart with `expo start --web --clear` to rebuild caches.
 
 ## Production integrations to add
-1. Connect quote form to a business email/CRM.
+1. Confirm the Formspree account's notification destination and spam-protection settings.
 2. Connect tracking to the chosen carrier/TMS API.
 3. Add payment/invoicing if customers will pay online.
 4. Add customer accounts and shipment history.

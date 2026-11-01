@@ -105,7 +105,8 @@ Website security notes
 - GitHub Pages serves this site over HTTPS, with HTTPS enforcement enabled for the custom domain.
 - The site's Content Security Policy is also declared in page metadata. GitHub Pages does not let this repository set arbitrary response headers, so protections such as `X-Frame-Options`, `Permissions-Policy`, and header-only `frame-ancestors` cannot be enabled there through these files.
 - `netlify.toml` and `vercel.json` configure those response headers if the site is deployed on Netlify or Vercel instead.
-- The quote form only creates an email draft in the visitor's email app. The website does not receive or store it. Customers should not email payment-card details, passwords, or sensitive documents.
+- The quote form submits requests to Formspree, which processes and forwards them to Oluku. Do not collect payment-card details, passwords, government ID numbers, or sensitive documents through the form.
 - The tracking form is a demonstration and does not connect to carrier data. Do not enter confidential shipment information into it.
 - The public privacy notice is at `privacy.html`. Update it before adding analytics, advertising tools, server-side quote intake, user accounts, or live carrier tracking.
-- A real online quote intake or carrier-tracking service needs a secured backend, input validation, access controls, and an updated privacy notice; never place provider API keys in browser code.
+- The Formspree endpoint identifier is public client-side configuration, not a secret. Review the provider's spam controls and account notification settings periodically; never put API keys or other secrets in browser code.
+- Live carrier tracking or other account-backed features still require a secured backend, input validation, access controls, and an updated privacy notice.

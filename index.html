@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0b2344">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; form-action 'self' mailto:; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://formspree.io; form-action 'self' https://formspree.io mailto:; upgrade-insecure-requests">
   <meta name="google-site-verification" content="5IYWfcaSzce3OvLX81Vru-5ow4mb-WRtCCdbyiIyoVg">
   <meta name="description" content="Oluku LLC provides local and regional logistics services in Baltimore, Washington, D.C., and nearby Virginia communities.">
   <link rel="icon" href="favicon.ico" sizes="any">
@@ -19,7 +19,7 @@
   <meta name="twitter:card" content="summary">
   <link rel="canonical" href="https://www.olukullc.com/">
   <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="styles.css?v=20261017-fleet-photos">
+  <link rel="stylesheet" href="styles.css?v=20261101-homepage-flow">
   <title>Oluku LLC | Global Logistics</title>
 </head>
 <body>
@@ -49,12 +49,12 @@
         <h1>Logistics that<br><em>moves you forward.</em></h1>
         <p>Local and regional logistics serving Baltimore, Washington, D.C., and nearby Virginia communities.</p>
         <div class="actions">
-          <a class="btn gold" href="#quote">Plan a shipment <span aria-hidden="true">↗</span></a>
-          <a class="btn ghost" href="#services">Explore services</a>
+          <a class="btn gold" href="#quote">Request a quote <span aria-hidden="true">↗</span></a>
+          <a class="btn ghost" href="#how-it-works">How it works</a>
         </div>
         <div class="hero-proof">
           <span class="proof-mark" aria-hidden="true">✳</span>
-          <span>From first mile to final delivery</span>
+          <span>Availability and pricing confirmed before booking</span>
         </div>
       </div>
       <div class="hero-visual">
@@ -172,23 +172,49 @@
       <p class="service-note">Service availability, handling requirements, and pricing are confirmed for each shipment before booking.</p>
     </section>
 
+    <section id="how-it-works" class="section process-section">
+      <div class="section-head">
+        <span class="eyebrow">HOW IT WORKS</span>
+        <h2>A clear path from quote to next steps.</h2>
+        <p>Share the shipment basics. Oluku will review the request and discuss available options before anything is booked.</p>
+      </div>
+      <ol class="process-grid">
+        <li class="process-card">
+          <span class="process-number" aria-hidden="true">01</span>
+          <h3>Tell us about the shipment</h3>
+          <p>Provide pickup and delivery locations, the service you have in mind, shipment size, and timing.</p>
+        </li>
+        <li class="process-card">
+          <span class="process-number" aria-hidden="true">02</span>
+          <h3>Review available options</h3>
+          <p>Oluku reviews the route and handling needs, then follows up to clarify details and discuss availability.</p>
+        </li>
+        <li class="process-card">
+          <span class="process-number" aria-hidden="true">03</span>
+          <h3>Confirm before booking</h3>
+          <p>Review the proposed service and pricing. A shipment is not booked until the details are discussed and agreed.</p>
+        </li>
+      </ol>
+      <a class="btn navy process-cta" href="#quote">Start a quote request <span aria-hidden="true">↗</span></a>
+    </section>
+
     <section id="quote" class="section dark-section">
       <div class="two-col">
         <div class="about-copy">
           <span class="eyebrow">REQUEST A QUOTE</span>
           <h2>Tell us what you need moved.</h2>
-          <p>Share the pickup and delivery locations, shipment type, approximate weight, and timing. Your email app will open with a draft for you to review and send. Oluku can then confirm availability, pricing, and next steps.</p>
+          <p>Share the pickup and delivery locations, shipment type, approximate weight, and timing. Submitting the form sends your request through Formspree to Oluku. Availability, pricing, and next steps are confirmed with you before booking.</p>
           <a class="quote-phone" href="tel:+12409783987"><span>Prefer to talk?</span><strong>(240) 978-3987 ↗</strong></a>
         </div>
-        <form id="quoteForm" class="form">
+        <form id="quoteForm" class="form" action="https://formspree.io/f/mqppyrna" method="POST">
           <label>Your name<input required name="name" autocomplete="name" placeholder="Full name"></label>
           <label>Email address<input required type="email" name="email" autocomplete="email" placeholder="you@company.com"></label>
           <label>Phone number <span class="optional">(optional)</span><input name="phone" type="tel" autocomplete="tel" placeholder="(000) 000-0000"></label>
           <div class="form-row"><label>Pickup location<input required name="origin" placeholder="City, state or country"></label><label>Delivery location<input required name="destination" placeholder="City, state or country"></label></div>
           <div class="form-row"><label>Service<select name="service"><option>Ground Transport</option><option>Cargo Van Delivery</option><option>Box Truck Freight</option><option>Air Freight</option><option>Ocean Freight</option><option>Express Courier</option><option>Cold Chain Logistics</option><option>Warehousing & Fulfillment</option></select></label><label>Approximate weight <span class="optional">(optional)</span><input name="weight" placeholder="e.g. 500 lb"></label></div>
           <label>Shipment details <span class="optional">(optional)</span><textarea name="details" rows="3" placeholder="Package size, timing, special handling..."></textarea></label>
-          <button class="btn gold" type="submit">Prepare quote email <span aria-hidden="true">↗</span></button>
-          <p class="form-privacy-note">Include only details needed for a quote. Do not email payment-card details, passwords, or sensitive documents.</p>
+          <button class="btn gold" type="submit">Send quote request <span aria-hidden="true">↗</span></button>
+          <p class="form-privacy-note">Submitting sends these details to Oluku through Formspree. Include only information needed for a quote; do not include payment-card details, passwords, government ID numbers, or sensitive documents. See our <a href="privacy.html">Privacy Notice</a>.</p>
           <p id="quoteStatus" class="status" role="status" aria-live="polite"></p>
         </form>
       </div>
@@ -216,7 +242,7 @@
       <div class="faq-list">
         <details>
           <summary>How do I request a quote?</summary>
-          <p>Complete the quote form with your pickup and delivery locations, service, shipment details, and timing. It opens your email app with a draft for you to review and send. No request is sent until you send that email.</p>
+          <p>Submit the quote form with your pickup and delivery locations, service, shipment details, and timing. The request is sent through Formspree to Oluku. A submission does not confirm availability, pricing, or a booking.</p>
         </details>
         <details>
           <summary>Is shipment tracking live on this website?</summary>
@@ -258,6 +284,6 @@
 
   <footer><span>© <span id="currentYear">2026</span> Oluku LLC Global Logistics</span><span>Moving possibilities. Delivering excellence.</span><a href="digital-card.html">Digital Business Card</a><a href="terms.html">Terms &amp; Conditions</a><a href="privacy.html">Privacy Notice</a><a href="https://www.olukullc.com/">www.Olukullc.com ↗</a></footer>
   <a class="back-to-top" href="#home" aria-label="Back to top">↑</a>
-  <script src="app.js?v=20261012-security"></script>
+  <script src="app.js?v=20261101-formspree"></script>
 </body>
 </html>
