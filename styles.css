@@ -92,7 +92,7 @@ nav a:hover, nav a[aria-current="location"] { color: var(--gold-light); }
 .section-head > p { max-width: 650px; margin: 0; color: var(--muted); font-size: 16px; line-height: 1.75; }
 .fleet-section { max-width: none; background: var(--paper); }
 .fleet-inner { max-width: 1240px; margin: auto; }
-.fleet-grid { display: grid; max-width: 980px; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.fleet-grid { display: grid; max-width: 520px; grid-template-columns: 1fr; gap: 24px; }
 .fleet-card { overflow: hidden; border: 1px solid #e8e7e2; border-radius: 16px; background: var(--white); box-shadow: 0 10px 35px rgba(18,35,58,.055); transition: transform .25s ease, box-shadow .25s ease; }
 .fleet-card:hover { transform: translateY(-5px); box-shadow: 0 20px 42px rgba(18,35,58,.12); }
 .fleet-card img { display: block; width: 100%; aspect-ratio: 16 / 9; background: #edf1f5; object-fit: cover; }
