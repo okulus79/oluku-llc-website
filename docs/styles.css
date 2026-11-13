@@ -69,14 +69,14 @@ nav a:hover, nav a[aria-current="location"] { color: var(--gold-light); }
 .hero-proof { display: flex; align-items: center; gap: 10px; color: #cad5e1; font-size: 12px; font-weight: 600; }
 .proof-mark { display: grid; width: 24px; height: 24px; place-items: center; color: var(--gold-light); border: 1px solid rgba(240,207,133,.5); border-radius: 50%; }
 
-.hero-visual { min-height: 430px; align-self: center; overflow: hidden; border: 1px solid rgba(255,255,255,.17); border-radius: 24px; background: radial-gradient(ellipse at 50% 38%, rgba(98,130,161,.46), transparent 54%), linear-gradient(150deg, #17395e, #0c2240 72%); box-shadow: 0 35px 90px rgba(0,0,0,.28); }
+.hero-visual { min-height: 600px; align-self: center; overflow: hidden; border: 1px solid rgba(255,255,255,.17); border-radius: 24px; background: radial-gradient(ellipse at 50% 38%, rgba(98,130,161,.46), transparent 54%), linear-gradient(150deg, #17395e, #0c2240 72%); box-shadow: 0 35px 90px rgba(0,0,0,.28); }
 .hero-visual::before { position: absolute; right: -12%; bottom: 104px; left: -12%; height: 1px; background: linear-gradient(90deg, transparent, rgba(240,207,133,.66), transparent); content: ""; transform: rotate(-18deg); }
 .visual-orbit { position: absolute; top: 50%; left: 50%; width: 310px; height: 310px; border: 1px solid rgba(240,207,133,.13); border-radius: 50%; transform: translate(-50%, -54%); }
 .orbit-two { width: 430px; height: 430px; border-color: rgba(255,255,255,.07); }
 .visual-label { position: absolute; z-index: 2; top: 24px; left: 25px; display: flex; align-items: center; gap: 9px; color: #dce6f0; font-size: 9px; font-weight: 800; letter-spacing: .16em; }
 .status-dot { width: 7px; height: 7px; border-radius: 50%; background: #82c49a; box-shadow: 0 0 0 4px rgba(130,196,154,.13); }
 .hero-truck { position: absolute; z-index: 1; height: auto; filter: drop-shadow(0 17px 16px rgba(0,0,0,.21)); }
-.hero-truck-main { top: 64px; left: 0; width: 100%; height: auto; border: 0; border-radius: 14px; background: transparent; object-fit: cover; object-position: center; }
+.hero-truck-main { top: 64px; left: 4%; width: 92%; height: 300px; border: 0; border-radius: 14px; background: transparent; object-fit: contain; object-position: center; }
 .visual-caption { position: absolute; z-index: 3; right: 18px; bottom: 165px; left: 18px; display: flex; align-items: center; justify-content: space-between; gap: 15px; padding: 14px 17px; border: 1px solid rgba(255,255,255,.16); border-radius: 13px; background: rgba(7,23,45,.77); backdrop-filter: blur(10px); }
 .visual-caption span { display: block; margin-bottom: 5px; color: var(--gold-light); font-size: 8px; font-weight: 800; letter-spacing: .14em; }
 .visual-caption strong { font-size: 14px; font-weight: 650; }
@@ -223,7 +223,7 @@ footer a:hover { text-decoration: underline; }
   .nav-cta { padding: 11px 14px; }
   .hero { min-height: auto; grid-template-columns: 1fr; gap: 42px; padding: 72px 7% 64px; }
   .hero-content { max-width: 690px; }
-  .hero-visual { width: min(100%, 640px); min-height: 420px; justify-self: center; }
+  .hero-visual { width: min(100%, 640px); min-height: 600px; justify-self: center; }
   .fleet-grid { grid-template-columns: 1fr; max-width: 620px; }
   .fleet-card { display: grid; grid-template-columns: minmax(180px, .9fr) 1.1fr; align-items: center; }
   .fleet-card img { height: 100%; min-height: 145px; object-fit: cover; }
@@ -246,8 +246,8 @@ footer a:hover { text-decoration: underline; }
   .hero-content > p { font-size: 16px; }
   .actions { gap: 9px; }
   .btn { min-height: 46px; padding: 12px 14px; font-size: 12px; }
-  .hero-visual { min-height: 355px; border-radius: 17px; }
-  .hero-truck-main { top: 62px; left: 0; width: 100%; height: auto; }
+  .hero-visual { min-height: 520px; border-radius: 17px; }
+  .hero-truck-main { top: 62px; left: 4%; width: 92%; height: 260px; }
   .visual-label { top: 18px; left: 17px; font-size: 8px; }
   .visual-caption { right: 10px; bottom: 142px; left: 10px; padding: 11px 12px; }
   .visual-caption strong { font-size: 12px; }
